@@ -1,0 +1,18 @@
+package biblioteca;
+
+public class Livro{
+    String nome;
+    String descrição;
+    String genero;
+    String ISBN;
+    float valor;
+    Autor autor;
+
+    public Livro(String nome){
+        this.nome = nome;
+    }
+
+    public void exibirDetalhes(){
+        System.out.println("Detalhes do livro: \n" + "NOME: " + nome +"\n" + "DESCRIÇÃO: " + descrição + "\n" + "GÊNERO: " + genero + "\n" + "ISBN: " + ISBN + "\n" + "VALOR: " + valor +"\n" + "AUTOR: " + autor.nome + "\n" + "NATURALIDADE DO AUTOR: " + autor.Naturalidade + "\n" + "IDADE DO AUTOR: " + autor.idade + "\n" + "CPF DO AUTOR: " + autor.cpf + "\n");
+    }
+}
