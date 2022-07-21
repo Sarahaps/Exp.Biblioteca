@@ -1,0 +1,33 @@
+package biblioteca;
+
+public class principal {
+    public static void main(String[] args) {
+        Autor a = new Autor("Fernando Pessoa", "123456");
+        a.idade = 55;
+        a.Naturalidade = "Portugal";
+
+        Autor b = new Autor("Colleen Hoover", "78910");
+        b.idade = 35;
+        b.Naturalidade = "Inglaterra";
+
+        Livro l1 = new Livro("Orientação a objetos");
+        l1.descrição = "Prof. Lazaro usa na aula";
+        l1.ISBN = "876453";
+        l1.genero = "Didático";
+        l1.valor = 100;
+        l1.autor = a;
+        l1.exibirDetalhes();
+
+
+
+        Livro l2= new Livro("É assim que acaba");
+        l2.descrição = "Livro sobre relacionamento abusivo";
+        l2.genero = "Romance";
+        l2.ISBN = "123-000";
+        l2.valor = 35;
+        l2.autor = b;
+        l2.exibirDetalhes();
+
+
+    }
+}
