@@ -1,0 +1,14 @@
+package biblioteca;
+
+public class Autor {
+    String nome;
+    String Naturalidade;
+    int idade;
+    String cpf;
+
+    public Autor(String nome, String cpf){
+        this.nome = nome;
+        this.cpf = cpf;
+
+    }
+}
